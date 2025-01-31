@@ -1,0 +1,52 @@
+/* General button styles */
+button {
+    padding: 10px 20px;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* View Details Button */
+  button:hover {
+    background-color: #4CAF50; /* Green for hover effect */
+    color: white;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Edit Button */
+  button:nth-of-type(2) {
+    background-color: #FFA500; /* Orange for Edit button */
+    color: white;
+  }
+  
+  button:nth-of-type(2):hover {
+    background-color: #FF7F00; /* Darker orange for hover effect */
+  }
+  
+  /* Delete Button */
+  button:nth-of-type(3) {
+    background-color: #FF4C4C; /* Red for Delete button */
+    color: white;
+  }
+  
+  button:nth-of-type(3):hover {
+    background-color: #FF0000; /* Darker red for hover effect */
+  }
+  
+  button:disabled {
+    background-color: #ddd;
+    color: #888;
+    cursor: not-allowed;
+  }
+  
+  /* Adding some padding and margin to the container of buttons */
+  div {
+    margin-top: 10px;
+  }
+  

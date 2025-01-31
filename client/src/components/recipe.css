@@ -1,0 +1,78 @@
+/* CreateRecipe.css */
+
+.create-recipe-container {
+    max-width: 100px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: aqua;
+    
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 220px;
+    align-items: center;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 0.5px;
+    width: 900px;
+
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 160px;
+    width: 900px;
+  }
+  
+  button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* width: 400px; */
+    margin-left: 250px;
+  }
+  
+  button:hover {
+    fill: whitesmoke;
+  }
+  
+  p {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  p.error {
+    color: red;
+  }
+  
+  p.success {
+    color: green;
+  }
+  

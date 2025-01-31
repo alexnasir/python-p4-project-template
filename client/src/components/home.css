@@ -1,0 +1,62 @@
+body {
+  background-color: #cbe957;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Cover the entire height of the viewport */
+  /* margin: 0; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.home-container {
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+  }
+  
+  .hero-image {
+
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .cta-button {
+    padding: 15px 25px;
+    background-color: #ff5733;
+    border: none;
+    font-size: 1.1em;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .featured {
+    margin-top: 40px;
+  }
+  
+  .recipe-carousel img {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); */
+  }
+  

@@ -1,0 +1,128 @@
+/* Base card styles */
+.card {
+    height: 440px;
+    width: 900px;
+    padding: 2rem 2rem;
+    margin-top: 80px;  /* Reduced for better centering */
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(135deg, #ffea87, #f5a623);  /* Gradient background for a pop of color */
+    border-radius: 15px;  /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.2);  /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth transformation on hover */
+}
+
+.card:hover {
+    transform: translateY(-10px);  /* Lift effect on hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);  /* Increase shadow on hover for 3D effect */
+}
+
+/* Text */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;  /* Dark color for the title */
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);  /* Subtle text shadow for some depth */
+}
+
+.head {
+    color: #333;  /* Light and dark contrast for heading */
+    font-family: 'Roboto', sans-serif;  /* Clean modern font */
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+/* Inputs */
+.field {
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: #222;  /* Darker background for input fields */
+    border-radius: 8px;
+    padding: 0.8em 1.5em;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.field:hover {
+    background-color: #333;  /* Darker shade on hover */
+}
+
+.input-icon {
+    height: 18px;
+    width: 18px;
+    fill: #ffeba7;  /* Bright color for icons */
+}
+
+.input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #f5f5f5;
+    font-size: 1em;
+    padding: 0.8em;
+    border-radius: 4px;
+}
+
+.input-field::placeholder {
+    color: #aaa;  /* Lighter placeholder text */
+}
+
+/* Buttons */
+.btn {
+    margin: 1rem;
+    border: none;
+    border-radius: 30px;  /* Circular button for a modern look */
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: 0.8em 2em;
+    background-color: #ffba08;  /* Bright yellow button color */
+    color: #222;  /* Dark button text */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f5a623;  /* Hover color change */
+    transform: scale(1.05);  /* Slight grow on hover */
+}
+
+.btn-link {
+    color: #f5f5f5;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.btn-link:hover {
+    color: #ffba08;
+}
+
+/* Hover & Focus Effects */
+.field input:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Additional animation for smooth transitions */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.8s ease-out;
+}
